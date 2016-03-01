@@ -148,7 +148,9 @@ end
 % don't give back zeros
 S = S(1:sCnt-1,:);
 
-% close progress bar
-close(h);
+if progress,
+    % close progress bar
+    close(h);
+end
 
 end
